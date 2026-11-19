@@ -1,0 +1,87 @@
+[
+  {
+    "id": "lead-demo-001",
+    "accountId": "demo",
+    "isDemo": true,
+    "name": "Sarah Chen",
+    "contact": "sarah.chen@example.com",
+    "preferred_time": "Weekday evenings after 6pm",
+    "consent": true,
+    "situation_summary": "Thinking of selling a 3-bed in Markham; worried about timing - should she sell this fall or wait for spring?",
+    "entry_reason": "Came from IG post 'Is fall actually a bad time to sell?' via bio link",
+    "entry_post_id": "post-demo-001",
+    "topic_id": "topic-demo-001",
+    "topic": "Should I sell this fall, or wait for spring?",
+    "content_viewed": [
+      { "post_id": "post-demo-001", "title": "Is fall actually a bad time to sell?", "watch_pct": 100 },
+      { "post_id": "post-demo-002", "title": "Fall selling myths vs reality (video)", "watch_pct": 85 },
+      { "post_id": "post-demo-003", "title": "The hidden costs of waiting until spring", "watch_pct": 72 }
+    ],
+    "shift_moment": "Asked 'what would my home go for if I listed this October?' after watching the cost video",
+    "personal_question": "What would MY home sell for this fall vs spring?",
+    "stage_reached": 5,
+    "suggested_opener": "You mentioned you're thinking about the fall vs spring timing. The hidden costs video seemed to hit home - what's making you consider selling sooner?",
+    "utm": {
+      "source": "instagram",
+      "medium": "bio",
+      "content": "post-demo-001"
+    },
+    "createdAt": "2026-09-20T18:34:00.000Z"
+  },
+  {
+    "id": "lead-demo-002",
+    "accountId": "demo",
+    "isDemo": true,
+    "name": "Mike Thompson",
+    "contact": "mike.t.thompson@example.com",
+    "preferred_time": "Saturday morning",
+    "consent": true,
+    "situation_summary": "Curious about home value in Scarborough; renovated kitchen last year, wants to know if it affected value.",
+    "entry_reason": "Came from IG post 'How Zillow estimates get it wrong' via story swipe-up",
+    "entry_post_id": "post-demo-005",
+    "topic_id": "topic-demo-002",
+    "topic": "What's my home worth?",
+    "content_viewed": [
+      { "post_id": "post-demo-005", "title": "How Zillow estimates get it wrong", "watch_pct": 100 },
+      { "post_id": "post-demo-006", "title": "What actually affects your home's value", "watch_pct": 92 }
+    ],
+    "shift_moment": "Asked 'so what's my place actually worth then?' after seeing the Zillow inaccuracy data",
+    "personal_question": "What's MY home worth right now?",
+    "stage_reached": 4,
+    "suggested_opener": "You mentioned you did a kitchen reno last year. That's one of the things Zillow can't see - let me take a look and give you a real number.",
+    "utm": {
+      "source": "instagram",
+      "medium": "story",
+      "content": "post-demo-005"
+    },
+    "createdAt": "2026-08-25T10:15:00.000Z"
+  },
+  {
+    "id": "lead-demo-003",
+    "accountId": "demo",
+    "isDemo": true,
+    "name": "Linda and Robert Park",
+    "contact": "linda.park@example.com",
+    "preferred_time": "Tuesday or Thursday afternoon",
+    "consent": true,
+    "situation_summary": "Empty nesters in North York, 4-bed colonial, kids moved out 3 years ago. Thinking about downsizing to a condo but worried about the financial impact and leaving their home of 28 years.",
+    "entry_reason": "Came from IG post 'Signs it might be time to downsize' shared by their daughter",
+    "entry_post_id": "post-demo-009",
+    "topic_id": "topic-demo-003",
+    "topic": "Downsizing: When and how to do it right",
+    "content_viewed": [
+      { "post_id": "post-demo-009", "title": "Signs it might be time to downsize", "watch_pct": 100 },
+      { "post_id": "post-demo-010", "title": "Downsizing math: Does it actually save money?", "watch_pct": 100 }
+    ],
+    "shift_moment": "After watching the math video, asked 'what would the numbers look like for our situation specifically?'",
+    "personal_question": "Should I downsize now, and what would that look like for ME?",
+    "stage_reached": 6,
+    "suggested_opener": "Your daughter shared that downsizing post with you - sounds like it struck a chord. The math video is a good starting point, but every situation is different. Want to run through your specific numbers?",
+    "utm": {
+      "source": "instagram",
+      "medium": "dm",
+      "content": "post-demo-009"
+    },
+    "createdAt": "2026-07-28T14:45:00.000Z"
+  }
+]

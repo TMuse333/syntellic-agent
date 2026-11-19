@@ -1,0 +1,93 @@
+[
+  {
+    "id": "branch-001-timing",
+    "Parent topic": "topic-demo-001",
+    "Topic": "Fall vs spring: does timing really change my sale?",
+    "Audience": "Sellers",
+    "Why it matters": "Most sellers assume spring wins. In the GTA, fall has fewer competing listings and more serious buyers.",
+    "Personal question (CTA)": "Would MY home do better listed this fall or next spring?",
+    "Local angle": "GTA inventory drops after September while relocation buyers stay active.",
+    "Status": "Active",
+    "Branch status": "Winner",
+    "Round": "Month 2",
+    "Posts": ["post-demo-001", "post-demo-002"]
+  },
+  {
+    "id": "branch-001-cost",
+    "Parent topic": "topic-demo-001",
+    "Topic": "What waiting until spring actually costs",
+    "Audience": "Sellers",
+    "Why it matters": "Waiting means more carrying costs, rate risk and spring competition.",
+    "Personal question (CTA)": "What would waiting until spring cost ME?",
+    "Local angle": "Spring listing counts in the GTA can double compared to November.",
+    "Status": "Active",
+    "Branch status": "Testing",
+    "Round": "Month 2",
+    "Posts": ["post-demo-003"]
+  },
+  {
+    "id": "branch-001-prep",
+    "Parent topic": "topic-demo-001",
+    "Topic": "Prepping a home for a fall sale before the snow",
+    "Audience": "Sellers",
+    "Why it matters": "Curb appeal and maintenance work have a short window before winter.",
+    "Personal question (CTA)": "What should I fix on MY home before listing this fall?",
+    "Local angle": "Toronto sellers have roughly six weeks of good exterior-work weather after Labour Day.",
+    "Status": "Active",
+    "Branch status": "Testing",
+    "Round": "Month 2",
+    "Posts": ["post-demo-004"]
+  },
+  {
+    "id": "branch-002-online",
+    "Parent topic": "topic-demo-002",
+    "Topic": "Online home estimates vs what homes actually sell for",
+    "Audience": "Sellers",
+    "Why it matters": "Automated estimates can miss by tens of thousands on unique or renovated homes.",
+    "Personal question (CTA)": "How far off is the online estimate for MY home?",
+    "Local angle": "GTA streets with mixed housing stock are where online estimates miss the most.",
+    "Status": "Active",
+    "Branch status": "Testing",
+    "Round": "Month 2",
+    "Posts": ["post-demo-005", "post-demo-008"]
+  },
+  {
+    "id": "branch-002-drivers",
+    "Parent topic": "topic-demo-002",
+    "Topic": "What actually drives a home's value (renos, features, street)",
+    "Audience": "Sellers",
+    "Why it matters": "Not every renovation pays back; location and layout often matter more.",
+    "Personal question (CTA)": "Which of MY home's features add the most value?",
+    "Local angle": "In Toronto, a legal basement suite can matter more than a new kitchen.",
+    "Status": "Active",
+    "Branch status": "Testing",
+    "Round": "Month 2",
+    "Posts": ["post-demo-006", "post-demo-007"]
+  },
+  {
+    "id": "branch-003-signs",
+    "Parent topic": "topic-demo-003",
+    "Topic": "Signs it's time to downsize",
+    "Audience": "Sellers",
+    "Why it matters": "Most people downsize a few years later than they wish they had.",
+    "Personal question (CTA)": "Is now the right time for ME to downsize?",
+    "Local angle": "GTA empty nesters often hold large homes in areas with long condo waitlists.",
+    "Status": "Active",
+    "Branch status": "Testing",
+    "Round": "Month 2",
+    "Posts": ["post-demo-009", "post-demo-011"]
+  },
+  {
+    "id": "branch-003-money",
+    "Parent topic": "topic-demo-003",
+    "Topic": "Does downsizing actually save money?",
+    "Audience": "Sellers",
+    "Why it matters": "Condo fees, land transfer tax and moving costs eat into the equity freed up.",
+    "Personal question (CTA)": "How much would downsizing actually free up for ME?",
+    "Local angle": "Toronto buyers pay both provincial and municipal land transfer tax.",
+    "Status": "Active",
+    "Branch status": "Testing",
+    "Round": "Month 2",
+    "Posts": ["post-demo-010", "post-demo-012"]
+  }
+]

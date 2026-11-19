@@ -1,0 +1,162 @@
+[
+  {
+    "id": "eval-001",
+    "question": "Is now a bad time to sell my house?",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-001",
+    "should_log_as_idea": false,
+    "notes": "Direct match to fall timing topic"
+  },
+  {
+    "id": "eval-002",
+    "question": "Should I wait until spring to list?",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-002",
+    "should_log_as_idea": false,
+    "notes": "Spring vs fall question"
+  },
+  {
+    "id": "eval-003",
+    "question": "How much does it cost to wait until spring to sell?",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-003",
+    "should_log_as_idea": false,
+    "notes": "Hidden costs topic"
+  },
+  {
+    "id": "eval-004",
+    "question": "What should I fix before selling in fall?",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-004",
+    "should_log_as_idea": false,
+    "notes": "Prep before snow post"
+  },
+  {
+    "id": "eval-005",
+    "question": "Is the Zillow estimate accurate?",
+    "expected_topic_id": "topic-demo-002",
+    "expected_post_id": "post-demo-005",
+    "should_log_as_idea": false,
+    "notes": "Direct Zillow accuracy question"
+  },
+  {
+    "id": "eval-006",
+    "question": "What makes a house worth more?",
+    "expected_topic_id": "topic-demo-002",
+    "expected_post_id": "post-demo-006",
+    "should_log_as_idea": false,
+    "notes": "Home value factors"
+  },
+  {
+    "id": "eval-007",
+    "question": "Will my kitchen reno increase my home's value?",
+    "expected_topic_id": "topic-demo-002",
+    "expected_post_id": "post-demo-007",
+    "should_log_as_idea": false,
+    "notes": "Renovation value question"
+  },
+  {
+    "id": "eval-008",
+    "question": "How do I find out what my house is worth?",
+    "expected_topic_id": "topic-demo-002",
+    "expected_post_id": "post-demo-008",
+    "should_log_as_idea": false,
+    "notes": "CMA offer post"
+  },
+  {
+    "id": "eval-009",
+    "question": "How do I know if it's time to downsize?",
+    "expected_topic_id": "topic-demo-003",
+    "expected_post_id": "post-demo-009",
+    "should_log_as_idea": false,
+    "notes": "Signs to downsize"
+  },
+  {
+    "id": "eval-010",
+    "question": "Does downsizing actually save money?",
+    "expected_topic_id": "topic-demo-003",
+    "expected_post_id": "post-demo-010",
+    "should_log_as_idea": false,
+    "notes": "Downsizing math"
+  },
+  {
+    "id": "eval-011",
+    "question": "How did other people downsize successfully?",
+    "expected_topic_id": "topic-demo-003",
+    "expected_post_id": "post-demo-011",
+    "should_log_as_idea": false,
+    "notes": "Downsizing case study"
+  },
+  {
+    "id": "eval-012",
+    "question": "What are the steps to downsize?",
+    "expected_topic_id": "topic-demo-003",
+    "expected_post_id": "post-demo-012",
+    "should_log_as_idea": false,
+    "notes": "Downsizing action plan"
+  },
+  {
+    "id": "eval-013",
+    "question": "I'm nervous about selling in October",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-001",
+    "should_log_as_idea": false,
+    "notes": "Indirect fall timing concern"
+  },
+  {
+    "id": "eval-014",
+    "question": "My kids keep telling me the house is too big",
+    "expected_topic_id": "topic-demo-003",
+    "expected_post_id": "post-demo-009",
+    "should_log_as_idea": false,
+    "notes": "Indirect downsizing question - matches signs post"
+  },
+  {
+    "id": "eval-015",
+    "question": "What's the market like right now in Toronto?",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-001",
+    "should_log_as_idea": false,
+    "notes": "General market question - route to timing topic"
+  },
+  {
+    "id": "eval-016",
+    "question": "I have a condo in Mississauga, is it a good time to sell?",
+    "expected_topic_id": "topic-demo-001",
+    "expected_post_id": "post-demo-001",
+    "should_log_as_idea": false,
+    "notes": "Timing question for condo"
+  },
+  {
+    "id": "eval-017",
+    "question": "How do I find a good real estate agent?",
+    "expected_topic_id": null,
+    "expected_post_id": null,
+    "should_log_as_idea": true,
+    "notes": "NO MATCH - No content about choosing an agent"
+  },
+  {
+    "id": "eval-018",
+    "question": "What's the best school district in Toronto?",
+    "expected_topic_id": null,
+    "expected_post_id": null,
+    "should_log_as_idea": true,
+    "notes": "NO MATCH - School districts not covered"
+  },
+  {
+    "id": "eval-019",
+    "question": "Should I buy a house or keep renting?",
+    "expected_topic_id": null,
+    "expected_post_id": null,
+    "should_log_as_idea": true,
+    "notes": "NO MATCH - Buying/renting decision not covered (selling focus)"
+  },
+  {
+    "id": "eval-020",
+    "question": "What mortgage rate can I get?",
+    "expected_topic_id": null,
+    "expected_post_id": null,
+    "should_log_as_idea": true,
+    "notes": "NO MATCH - Mortgage rates not covered"
+  }
+]

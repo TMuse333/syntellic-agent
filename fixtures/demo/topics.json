@@ -1,0 +1,48 @@
+[
+  {
+    "id": "topic-demo-001",
+    "accountId": "demo",
+    "isDemo": true,
+    "Topic": "Should I sell this fall, or wait for spring?",
+    "Audience": "Homeowners in the GTA considering selling in the next 6-12 months",
+    "Why it matters": "Timing can affect sale price by 5-10%. Fall sellers face less competition but fewer buyers; spring has more buyers but more listings.",
+    "Personal question (CTA)": "What would MY home sell for this fall vs spring?",
+    "Local angle": "GTA market typically peaks in March-May, dips in Dec-Jan, but inventory is unpredictable year to year.",
+    "From library": null,
+    "Source": "Common question",
+    "Status": "Active",
+    "Priority": "High",
+    "Posts": ["post-demo-001", "post-demo-002", "post-demo-003", "post-demo-004"],
+    "branches": ["timing", "cost", "prep before snow"]
+  },
+  {
+    "id": "topic-demo-002",
+    "accountId": "demo",
+    "isDemo": true,
+    "Topic": "What's my home worth?",
+    "Audience": "Homeowners curious about their property value, not necessarily ready to sell",
+    "Why it matters": "Home equity is often the largest asset. Knowing its value helps with financial planning, refinancing, or deciding when to sell.",
+    "Personal question (CTA)": "What's MY home worth right now?",
+    "Local angle": "GTA home values vary dramatically by neighbourhood - even street-to-street in some areas.",
+    "From library": null,
+    "Source": "Top search query",
+    "Status": "Active",
+    "Priority": "High",
+    "Posts": ["post-demo-005", "post-demo-006", "post-demo-007", "post-demo-008"]
+  },
+  {
+    "id": "topic-demo-003",
+    "accountId": "demo",
+    "isDemo": true,
+    "Topic": "Downsizing: When and how to do it right",
+    "Audience": "Empty nesters, retirees, or anyone in a home larger than they need",
+    "Why it matters": "Downsizing frees up equity, reduces maintenance, and can improve quality of life - but timing and execution matter.",
+    "Personal question (CTA)": "Should I downsize now, and what would that look like for ME?",
+    "Local angle": "GTA condo market offers great downsizing options, but elevator wait times and condo fees vary widely.",
+    "From library": null,
+    "Source": "Client conversations",
+    "Status": "Active",
+    "Priority": "Medium",
+    "Posts": ["post-demo-009", "post-demo-010", "post-demo-011", "post-demo-012"]
+  }
+]

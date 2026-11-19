@@ -1,0 +1,126 @@
+[
+  {
+    "id": "persona-fall-seller",
+    "label": "Fall seller worried about price",
+    "entryPostId": null,
+    "utm": {
+      "source": "instagram",
+      "medium": "bio"
+    },
+    "expect": {
+      "booked": true,
+      "meetingKind": "call"
+    },
+    "persona": "Jane Doe, 44. Owns a 3-bed semi in Markham with her husband. Her mom is moving in with them next year, so they need a place with a main-floor bedroom. She's worried prices drop if they wait for spring. Email jane.doe@example.com, phone 905-555-0101. Starts vague; only shares details when asked well. Saw Sam's post about whether fall is a bad time to sell.",
+    "scripted": [
+      "/saw-post",
+      "/post post-demo-001",
+      "Yeah we're thinking about selling but everyone says wait for spring",
+      "It's a 3 bed semi in Markham",
+      "My mom is moving in with us next year so we need something with a main floor bedroom, and I'm worried prices drop if we wait",
+      "No, that would actually help",
+      "Jane Doe",
+      "jane.doe@example.com",
+      "Yes that's fine",
+      "The second one works"
+    ]
+  },
+  {
+    "id": "persona-value-curious",
+    "label": "Curious about value, not ready",
+    "entryPostId": "post-demo-005",
+    "utm": {
+      "source": "instagram",
+      "medium": "story",
+      "content": "post-demo-005"
+    },
+    "expect": {
+      "booked": false,
+      "leadType": "nurture"
+    },
+    "persona": "Raj, 38. Owns a townhouse but has no plans to sell. Saw an online estimate and is just curious whether it's accurate. Happy to get useful info by email (raj@example.com) but does NOT want a call.",
+    "scripted": [
+      "Just curious if those online estimates are any good",
+      "Just wondering really, no plans to sell or anything",
+      "Sure, send it",
+      "raj@example.com",
+      "Yes"
+    ]
+  },
+  {
+    "id": "persona-downsizer",
+    "label": "Empty nester thinking of downsizing",
+    "entryPostId": null,
+    "utm": null,
+    "expect": {
+      "booked": true,
+      "meetingKind": "call"
+    },
+    "persona": "Linda Park, 67. Has lived 30 years in a 4-bed detached in Etobicoke. Kids keep telling her it's too big; the stairs are getting hard. Phone 416-555-0199. Polite, a little unsure. Saw one of Sam's posts on Instagram but doesn't remember the title.",
+    "scripted": [
+      "/saw-post",
+      "the one about whether it's time to downsize",
+      "/post post-demo-009",
+      "My kids keep telling me the house is too big",
+      "It's a 4 bedroom detached in Etobicoke and the stairs are getting hard, I've been here 30 years",
+      "No, not a bad idea",
+      "Linda Park",
+      "416-555-0199",
+      "Yes",
+      "1"
+    ]
+  },
+  {
+    "id": "persona-buyer-listings",
+    "label": "Buyer asking about listings",
+    "entryPostId": null,
+    "utm": {
+      "source": "instagram",
+      "medium": "bio"
+    },
+    "expect": {
+      "booked": true,
+      "meetingKind": "showing"
+    },
+    "persona": "Marcus Lee, 31. Renting with his partner; lease ends in January. Wants a 3-bed under $900k in Etobicoke near the subway for his commute. Email marcus.lee@example.com.",
+    "scripted": [
+      "Do you have any 3 bed places under 900k in Etobicoke?",
+      "We need to be near the subway for my commute and our lease ends in January",
+      "No, let's do it",
+      "Marcus Lee",
+      "marcus.lee@example.com",
+      "Yes",
+      "First one"
+    ]
+  },
+  {
+    "id": "persona-out-of-area",
+    "label": "Out-of-area seller",
+    "entryPostId": null,
+    "utm": null,
+    "expect": {
+      "booked": false
+    },
+    "persona": "Tom, 52. Wants to sell his condo in Vancouver this spring. Not in the agent's area.",
+    "scripted": [
+      "Thinking of selling my condo in Vancouver this spring, what should I do?",
+      "Oh ok, thanks"
+    ]
+  },
+  {
+    "id": "persona-off-topic",
+    "label": "Off-topic question",
+    "entryPostId": null,
+    "utm": null,
+    "expect": {
+      "booked": false,
+      "unanswered": true
+    },
+    "persona": "A parent browsing. Asks which Toronto school district is best. Not buying or selling right now.",
+    "scripted": [
+      "What's the best school district in Toronto?",
+      "Just curious, thanks",
+      "No thanks"
+    ]
+  }
+]

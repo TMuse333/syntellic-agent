@@ -1,0 +1,242 @@
+[
+  {
+    "id": "snapshot-demo-001-24h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-001",
+    "igPostLink": "https://instagram.com/p/demo001",
+    "hoursAfterPost": 24,
+    "capturedAt": "2026-09-16T00:00:00.000Z",
+    "metrics": {
+      "likes": 245,
+      "comments": 32,
+      "saves": 89,
+      "shares": 18,
+      "reach": 3420,
+      "impressions": 4180,
+      "profileVisits": 45,
+      "websiteClicks": 12
+    },
+    "engagementRate": 4.2
+  },
+  {
+    "id": "snapshot-demo-001-72h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-001",
+    "igPostLink": "https://instagram.com/p/demo001",
+    "hoursAfterPost": 72,
+    "capturedAt": "2026-09-18T00:00:00.000Z",
+    "metrics": {
+      "likes": 312,
+      "comments": 41,
+      "saves": 124,
+      "shares": 28,
+      "reach": 4890,
+      "impressions": 6120,
+      "profileVisits": 67,
+      "websiteClicks": 19
+    },
+    "engagementRate": 4.8
+  },
+  {
+    "id": "snapshot-demo-002-24h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-002",
+    "igPostLink": "https://instagram.com/p/demo002",
+    "hoursAfterPost": 24,
+    "capturedAt": "2026-09-19T00:00:00.000Z",
+    "metrics": {
+      "likes": 178,
+      "comments": 24,
+      "saves": 45,
+      "shares": 12,
+      "reach": 2890,
+      "impressions": 3560,
+      "profileVisits": 38,
+      "websiteClicks": 8
+    },
+    "engagementRate": 2.9
+  },
+  {
+    "id": "snapshot-demo-002-72h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-002",
+    "igPostLink": "https://instagram.com/p/demo002",
+    "hoursAfterPost": 72,
+    "capturedAt": "2026-09-21T00:00:00.000Z",
+    "metrics": {
+      "likes": 234,
+      "comments": 31,
+      "saves": 67,
+      "shares": 19,
+      "reach": 3780,
+      "impressions": 4680,
+      "profileVisits": 52,
+      "websiteClicks": 14
+    },
+    "engagementRate": 3.1
+  },
+  {
+    "id": "snapshot-demo-005-24h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-005",
+    "igPostLink": "https://instagram.com/p/demo005",
+    "hoursAfterPost": 24,
+    "capturedAt": "2026-08-21T00:00:00.000Z",
+    "metrics": {
+      "likes": 567,
+      "comments": 89,
+      "saves": 234,
+      "shares": 156,
+      "reach": 12450,
+      "impressions": 18900,
+      "profileVisits": 189,
+      "websiteClicks": 45
+    },
+    "engagementRate": 5.8
+  },
+  {
+    "id": "snapshot-demo-005-72h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-005",
+    "igPostLink": "https://instagram.com/p/demo005",
+    "hoursAfterPost": 72,
+    "capturedAt": "2026-08-23T00:00:00.000Z",
+    "metrics": {
+      "likes": 823,
+      "comments": 124,
+      "saves": 378,
+      "shares": 245,
+      "reach": 45200,
+      "impressions": 67800,
+      "profileVisits": 412,
+      "websiteClicks": 89
+    },
+    "engagementRate": 6.2
+  },
+  {
+    "id": "snapshot-demo-006-24h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-006",
+    "igPostLink": "https://instagram.com/p/demo006",
+    "hoursAfterPost": 24,
+    "capturedAt": "2026-08-26T00:00:00.000Z",
+    "metrics": {
+      "likes": 67,
+      "comments": 8,
+      "saves": 23,
+      "shares": 4,
+      "reach": 1240,
+      "impressions": 1560,
+      "profileVisits": 15,
+      "websiteClicks": 3
+    },
+    "engagementRate": 1.5
+  },
+  {
+    "id": "snapshot-demo-006-72h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-006",
+    "igPostLink": "https://instagram.com/p/demo006",
+    "hoursAfterPost": 72,
+    "capturedAt": "2026-08-28T00:00:00.000Z",
+    "metrics": {
+      "likes": 89,
+      "comments": 12,
+      "saves": 34,
+      "shares": 6,
+      "reach": 1680,
+      "impressions": 2100,
+      "profileVisits": 22,
+      "websiteClicks": 5
+    },
+    "engagementRate": 1.8
+  },
+  {
+    "id": "snapshot-demo-009-24h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-009",
+    "igPostLink": "https://instagram.com/p/demo009",
+    "hoursAfterPost": 24,
+    "capturedAt": "2026-07-11T00:00:00.000Z",
+    "metrics": {
+      "likes": 156,
+      "comments": 28,
+      "saves": 67,
+      "shares": 34,
+      "reach": 3890,
+      "impressions": 4780,
+      "profileVisits": 42,
+      "websiteClicks": 0
+    },
+    "engagementRate": 3.8
+  },
+  {
+    "id": "snapshot-demo-009-72h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-009",
+    "igPostLink": "https://instagram.com/p/demo009",
+    "hoursAfterPost": 72,
+    "capturedAt": "2026-07-13T00:00:00.000Z",
+    "metrics": {
+      "likes": 212,
+      "comments": 38,
+      "saves": 89,
+      "shares": 52,
+      "reach": 5670,
+      "impressions": 7120,
+      "profileVisits": 61,
+      "websiteClicks": 0
+    },
+    "engagementRate": 4.1
+  },
+  {
+    "id": "snapshot-demo-010-24h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-010",
+    "igPostLink": "https://instagram.com/p/demo010",
+    "hoursAfterPost": 24,
+    "capturedAt": "2026-07-21T00:00:00.000Z",
+    "metrics": {
+      "likes": 45,
+      "comments": 5,
+      "saves": 78,
+      "shares": 8,
+      "reach": 1120,
+      "impressions": 1340,
+      "profileVisits": 18,
+      "websiteClicks": 6
+    },
+    "engagementRate": 1.2
+  },
+  {
+    "id": "snapshot-demo-010-72h",
+    "accountId": "demo",
+    "isDemo": true,
+    "postId": "post-demo-010",
+    "igPostLink": "https://instagram.com/p/demo010",
+    "hoursAfterPost": 72,
+    "capturedAt": "2026-07-23T00:00:00.000Z",
+    "metrics": {
+      "likes": 67,
+      "comments": 9,
+      "saves": 112,
+      "shares": 12,
+      "reach": 1560,
+      "impressions": 1890,
+      "profileVisits": 28,
+      "websiteClicks": 11
+    },
+    "engagementRate": 1.6
+  }
+]

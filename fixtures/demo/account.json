@@ -1,0 +1,57 @@
+{
+  "accountId": "demo",
+  "isDemo": true,
+  "name": "Sam Rivers",
+  "company": "Demo Realty",
+  "email": "sam@demo-realty.example",
+  "phone": "555-DEMO-000",
+  "bio": "Fictional real estate agent for demo purposes. 10+ years helping families find their perfect home in the Greater Toronto Area.",
+  "location": "Toronto, ON",
+  "integrations": {
+    "notion": {
+      "postsDataSourceId": "demo-posts-db",
+      "topicsDataSourceId": "demo-topics-db"
+    },
+    "instagram": {
+      "igUserId": "demo-ig-user",
+      "token": "demo-token-not-real",
+      "tokenExpiresAt": "2099-12-31T23:59:59.000Z"
+    }
+  },
+  "billing": {
+    "status": "demo",
+    "plan": "demo"
+  },
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-01-01T00:00:00.000Z",
+  "agent": {
+    "displayName": "Sam",
+    "fullName": "Sam Rivers",
+    "title": "REALTOR®",
+    "brokerage": "Demo Realty",
+    "region": "the Greater Toronto Area",
+    "serviceAreas": [
+      "toronto",
+      "etobicoke",
+      "north york",
+      "scarborough",
+      "markham",
+      "mississauga",
+      "vaughan",
+      "richmond hill",
+      "oakville",
+      "brampton",
+      "pickering",
+      "ajax",
+      "unionville",
+      "downtown"
+    ],
+    "timezone": "America/Toronto",
+    "notifyEmail": "sam@demo-realty.example",
+    "meeting": {
+      "minutes": 15,
+      "mode": "phone"
+    },
+    "voiceNotes": "Friendly, plain-spoken, never salesy."
+  }
+}

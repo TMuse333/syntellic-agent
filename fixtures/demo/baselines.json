@@ -1,0 +1,66 @@
+[
+  {
+    "id": "baseline-demo-001",
+    "accountId": "demo",
+    "isDemo": true,
+    "type": "account",
+    "capturedAt": "2026-06-01T00:00:00.000Z",
+    "metrics": {
+      "followers": 2847,
+      "following": 312,
+      "mediaCount": 156,
+      "avgLikesLast30": 87,
+      "avgCommentsLast30": 12,
+      "avgReachLast30": 1250,
+      "engagementRate": 3.1
+    }
+  },
+  {
+    "id": "baseline-demo-002",
+    "accountId": "demo",
+    "isDemo": true,
+    "type": "monthly",
+    "capturedAt": "2026-07-01T00:00:00.000Z",
+    "metrics": {
+      "followers": 3012,
+      "following": 318,
+      "mediaCount": 168,
+      "avgLikesLast30": 95,
+      "avgCommentsLast30": 14,
+      "avgReachLast30": 1420,
+      "engagementRate": 3.3
+    }
+  },
+  {
+    "id": "baseline-demo-003",
+    "accountId": "demo",
+    "isDemo": true,
+    "type": "monthly",
+    "capturedAt": "2026-08-01T00:00:00.000Z",
+    "metrics": {
+      "followers": 3289,
+      "following": 325,
+      "mediaCount": 180,
+      "avgLikesLast30": 112,
+      "avgCommentsLast30": 18,
+      "avgReachLast30": 1680,
+      "engagementRate": 3.6
+    }
+  },
+  {
+    "id": "baseline-demo-004",
+    "accountId": "demo",
+    "isDemo": true,
+    "type": "monthly",
+    "capturedAt": "2026-09-01T00:00:00.000Z",
+    "metrics": {
+      "followers": 3521,
+      "following": 331,
+      "mediaCount": 192,
+      "avgLikesLast30": 128,
+      "avgCommentsLast30": 21,
+      "avgReachLast30": 1890,
+      "engagementRate": 3.9
+    }
+  }
+]
