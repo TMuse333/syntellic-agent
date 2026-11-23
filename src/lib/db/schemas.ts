@@ -64,6 +64,11 @@ export interface ContentCore {
   embedding?: number[];
   embeddingText?: string;
   syncedAt: Date;
+
+  // Bot usage (2026-11-21): how often the chatbot has served this item, and when
+  // last. Written by the retrieval path; read by the content library grid.
+  botRefs?: number;
+  lastServedAt?: Date;
 }
 
 // =============================================================================

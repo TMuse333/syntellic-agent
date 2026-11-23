@@ -134,6 +134,23 @@ export async function getPostsByTopic(accountId: string, topicId: string): Promi
 // Lead queries
 // =============================================================================
 
+/**
+ * Record that the bot served these content items (by sourceId): bump botRefs and
+ * stamp lastServedAt. Fire-and-forget from the retrieval path; no-op without Mongo.
+ */
+export async function recordServed(accountId: string, sourceIds: string[]): Promise<void> {
+  if (!isMongoConfigured() || !sourceIds.length) return;
+  try {
+    const db = await getDb();
+    await db.collection(COLLECTIONS.content).updateMany(
+      { accountId, sourceId: { $in: sourceIds } },
+      { $inc: { botRefs: 1 }, $set: { lastServedAt: new Date() } }
+    );
+  } catch {
+    console.error("Failed to record served content:", accountId);
+  }
+}
+
 export async function getLeads(accountId: string): Promise<Lead[]> {
   if (!isMongoConfigured()) {
     return [];

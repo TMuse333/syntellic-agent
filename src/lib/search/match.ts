@@ -10,6 +10,7 @@
  */
 
 import type { Topic, ContentItem, Listing } from "../db/schemas";
+import { recordServed } from "../db/queries";
 import type { Embedder, Store, Scored, Filter } from "../providers/types";
 
 export interface MatchDeps {
@@ -50,7 +51,10 @@ export async function matchQuestion(deps: MatchDeps, accountId: string, question
   let topic: Topic | null = null;
   let score = 0;
   if (bestPost && bestPost.score >= (bestTopic?.score ?? 0) && bestPost.score >= threshold) {
-    const tid = (bestPost.doc.branchId ?? bestPost.doc.topicId) as string | undefined;
+    // Posts synced from Notion may only carry rootTopicId (topicId/branchId
+    // null when they're not filed under a branch). Fall back to it so a strong
+    // post match still resolves its topic instead of being dropped.
+    const tid = (bestPost.doc.branchId ?? bestPost.doc.topicId ?? bestPost.doc.rootTopicId) as string | undefined;
     topic = tid ? await store.getTopic(accountId, tid) : null;
     score = bestPost.score;
   } else if (bestTopic && bestTopic.score >= threshold) {
@@ -62,6 +66,8 @@ export async function matchQuestion(deps: MatchDeps, accountId: string, question
   const rootTopicId = topic.parentTopicId ?? topic.sourceId;
   const branchId = topic.parentTopicId ? topic.sourceId : (bestPost?.doc.branchId as string | undefined) ?? null;
   const inTopic = await store.searchContent(v, { accountId, kind: "post", isPublic: true, rootTopicId }, 3);
+  // Track which content the bot actually serves (fire-and-forget).
+  void recordServed(accountId, inTopic.map((p) => p.doc.sourceId as string).filter(Boolean)).catch(() => {});
   return { topic, rootTopicId, branchId: branchId ?? null, score, posts: inTopic, candidates };
 }
 

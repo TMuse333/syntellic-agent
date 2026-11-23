@@ -16,6 +16,7 @@ import { Client } from "@notionhq/client";
 import { getStrategyAccount } from "../account/strategyAccount";
 import { mapNotionTopic, mapNotionPost } from "../demo/fixtures";
 import { ingest } from "./ingest";
+import { rehostToBlob } from "../media/rehost";
 import type { Embedder, Store } from "../providers/types";
 
 type Raw = Record<string, unknown>;
@@ -135,6 +136,13 @@ export async function syncAccountContent(accountId: string, deps: { store: Store
     raw.Topic = firstId(raw.Topic); // single-relation → the post's topic/branch
     return mapNotionPost(raw, accountId, (id) => titles.get(id));
   });
+
+  // Re-host each post's media to Blob so thumbnails don't rot when Notion's
+  // pre-signed URLs expire. No-op (keeps the Notion URL) without BLOB_READ_WRITE_TOKEN.
+  for (const post of content) {
+    const p = post as { mediaUrl?: string; sourceId: string };
+    if (p.mediaUrl) p.mediaUrl = await rehostToBlob(p.mediaUrl, `accounts/${accountId}/posts/${p.sourceId}`);
+  }
 
   const r = await ingest(deps.store, deps.embedder, { topics, content });
   return { accountId, topics: topics.length, posts: content.length, embedded: r.embedded };
