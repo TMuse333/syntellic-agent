@@ -12,6 +12,11 @@
 // npm script, so it's set before the provider modules capture it at import time.
 import { createProviders } from "../src/lib/providers";
 import { syncAccountContent } from "../src/lib/content/notionSource";
+import { syncAccountContentFromStrategy } from "../src/lib/content/strategyContentSource";
+
+// CMD-01 ruling (2026-11-21): consume strategy-app's content API, not Notion.
+// Default stays "notion" until STRAT-B's endpoint ships; flip to "strategy" then.
+const CONTENT_SOURCE = (process.env.CONTENT_SOURCE || "notion").toLowerCase();
 
 async function main() {
   const accountId = process.argv[2];
@@ -21,8 +26,13 @@ async function main() {
   const p = await createProviders("live");
   if (p.store.name !== "mongo") throw new Error("Expected the Mongo store — check MONGODB_URI");
 
-  const r = await syncAccountContent(accountId, p);
-  console.log(`Synced ${r.accountId}: ${r.topics} topics, ${r.posts} posts, ${r.embedded} embedded (${p.embedder.name})`);
+  const r =
+    CONTENT_SOURCE === "strategy"
+      ? await syncAccountContentFromStrategy(accountId, p)
+      : await syncAccountContent(accountId, p);
+  console.log(
+    `Synced ${r.accountId} via ${CONTENT_SOURCE}: ${r.topics} topics, ${r.posts} posts, ${r.embedded} embedded (${p.embedder.name})`
+  );
   process.exit(0);
 }
 main().catch((e) => {
