@@ -19,8 +19,12 @@ export const dynamic = "force-dynamic";
 export default async function SitePage({ params }: { params: Promise<{ accountId: string }> }) {
   const { accountId } = await params;
   const account = await getStrategyAccount(accountId);
-  if (!account?.agent) notFound();
+  if (!account) notFound();
+  // Persona is optional — render with name fallbacks so the client URL works
+  // before AgentConfig is filled in strategy-app.
   const agent = account.agent;
+  const name = agent?.fullName || account.name;
+  const displayName = agent?.displayName || account.name;
 
   const p = await providers();
   const [posts, listings] = await Promise.all([
@@ -35,24 +39,26 @@ export default async function SitePage({ params }: { params: Promise<{ accountId
     <main className="mx-auto max-w-5xl space-y-10 px-4 py-10">
       <section className="flex flex-wrap items-start justify-between gap-6 rounded-2xl border bg-muted/30 p-8">
         <div>
-          <Badge variant="secondary" className="mb-3">
-            {account.isDemo ? "Demo account" : agent.brokerage}
-          </Badge>
-          <h1 className="text-3xl font-bold">{agent.fullName}</h1>
-          <p className="mt-1 text-muted-foreground">
-            {agent.title}
-            {agent.brokerage ? ` · ${agent.brokerage}` : ""} · serving {agent.region}
-          </p>
+          {(account.isDemo || agent?.brokerage) && (
+            <Badge variant="secondary" className="mb-3">
+              {account.isDemo ? "Demo account" : agent?.brokerage}
+            </Badge>
+          )}
+          <h1 className="text-3xl font-bold">{name}</h1>
+          {agent && (
+            <p className="mt-1 text-muted-foreground">
+              {agent.title}
+              {agent.brokerage ? ` · ${agent.brokerage}` : ""}
+              {agent.region ? ` · serving ${agent.region}` : ""}
+            </p>
+          )}
         </div>
         <div className="flex flex-col items-end gap-2">
           <a
             href={`/demo/chat?account=${accountId}`}
             className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground"
           >
-            Chat with {agent.displayName}
-          </a>
-          <a href={`/site/${accountId}/inspect`} className="text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground">
-            Open knowledge inspector →
+            Chat with {displayName}
           </a>
         </div>
       </section>
@@ -98,11 +104,11 @@ export default async function SitePage({ params }: { params: Promise<{ accountId
       </section>
 
       <section>
-        <h2 className="mb-4 text-xl font-semibold">Talk to {agent.displayName}</h2>
+        <h2 className="mb-4 text-xl font-semibold">Talk to {displayName}</h2>
         <iframe
           src={`/demo/chat?account=${accountId}`}
           className="h-[600px] w-full max-w-md rounded-2xl border"
-          title={`Chat with ${agent.displayName}`}
+          title={`Chat with ${displayName}`}
         />
       </section>
     </main>

@@ -10,6 +10,7 @@
  */
 
 import type { Account, ContentItem, EventRecord, EventName, Listing, Topic } from "../db/schemas";
+import { sendNotification } from "../notify/client";
 import type { Providers } from "../providers/types";
 import type { Action, ChatState, Signals, PostCard, QuickReply, RetrievalTrace } from "./types";
 import { CMD } from "./types";
@@ -182,7 +183,23 @@ export async function handleMessage(deps: EngineDeps, account: Account, state: C
         ...(await titles(deps, account.slug, state)),
       });
       await deps.store.insertLead(built.lead);
-      await deps.notifier.sendLeadBrief(account, built.lead, { subject: built.subject, text: built.text });
+      if (process.env.NOTIFY_URL) {
+        // Route the lead through the notify gateway (Slack + email); booking vs
+        // nurture distinguished via data.leadType.
+        await sendNotification({
+          accountId: account.slug,
+          event: "lead.captured",
+          visibility: "internal",
+          data: {
+            leadType: built.lead.leadType,
+            leadId: built.lead.leadId,
+            subject: built.subject,
+            text: built.text,
+          },
+        });
+      } else {
+        await deps.notifier.sendLeadBrief(account, built.lead, { subject: built.subject, text: built.text });
+      }
       state.leadId = built.lead.leadId;
       lead = built.lead;
       ev("booking_made", { leadId: built.lead.leadId });
